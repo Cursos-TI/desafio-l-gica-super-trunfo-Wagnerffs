@@ -12,7 +12,7 @@ int main() {
 
 
      //criação das variáveis;
-    char estado1, estado2, cidade1, cidade2;
+    char estado1[20], estado2[20], cidade1[20], cidade2[20];
     int cod1, cod2, turismo1, turismo2;
     float pop1, pop2;
     float area1, area2;
@@ -21,13 +21,19 @@ int main() {
     float pibpc1, pibpc2; //pib / pela população;
     
 
-    inicializando as variáveis;
-    estado1 = "para";
-    estado2 = "para";
-    cidade1 = "belem";
-    cidade2 = "belem;"
+    //inicializando as variáveis;
+    estado1[20] = "para";
+    estado2[20] = "para";
+    cidade1[20] = "belem";
+    cidade2[20] = "belem";
     cod1 = 25;
     cod2 = 25;
+    pop1 = 360,00;
+    pop2 = 360,00;
+    area1 = 360.000;
+    area2 = 360.000;
+    pib1 = 360.000;
+    pib2 = 360.000;
     turismo1 = 25;
     turismo2 = 25;
   
@@ -37,32 +43,55 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
 
-    //criação das entradas e saídas; 
+    //criação das entradas e saídas jogador A; 
     printf("Digite o estado do jogador A:\n");
     scanf("%s", &estado1);
 
     printf("Digite o nome da cidade do jogador A\n");
     scanf("%s", &cidade1);
 
-    //printf("Digite o código da cidade:\n");
-    //scanf("%d", &cod);
+    printf("Digite o código da cidade do jogador A:\n");
+    scanf("%d", &cod1);
 
     printf("Qual é a população?\n");
-    scanf("%.2f", &pop1);
+    scanf("%f", &pop1);
 
     printf("Qual é a área\n");
-    scanf("%.3f", &area1);
+    scanf("%f", &area1);
 
     printf("Qual o PIB\n");
-    scanf("%.3f", &pib1);
+    scanf("%f", &pib1);
 
     printf("Quantos pontos turísticos\n");
     scanf("%d", &turismo1);
 
-    densidade1 =  pop / area;
-    densidade2 =  pop / area;
-    pibpc1 = pib / pop;
-    pibpc2 = pib / pop;
+     //criação das entradas e saídas jogador B; 
+    printf("Digite o estado do jogador B:\n");
+    scanf("%s", &estado2);
+
+    printf("Digite o nome da cidade do jogador B\n");
+    scanf("%s", &cidade2);
+
+    printf("Digite o código da cidade do jogador B:\n");
+    scanf("%d", &cod2);
+
+    printf("Qual é a população?\n");
+    scanf("%f", &pop2);
+
+    printf("Qual é a área\n");
+    scanf("%f", &area2);
+
+    printf("Qual o PIB\n");
+    scanf("%f", &pib2);
+
+    printf("Quantos pontos turísticos\n");
+    scanf("%d", &turismo2);
+
+
+    densidade1 =  pop1 / area1;
+    densidade2 =  pop2 / area2;
+    pibpc1 = pib1 / pop1;
+    pibpc2 = pib2 / pop2;
 
     
     // Exibição dos Dados das Cartas;
@@ -71,15 +100,65 @@ int main() {
 
 
     //Exibição dos dados
+    printf("OS DADOS DO JOGADOR 'A' SÃO:\n\n");
+
     printf("O estado do jogador A é: %s\n", estado1);
     printf("O código da cidade 01 é: %d\n", cod1);
     printf("O nome da cidade é: %s\n", cidade1);
-    printf("A população é de: %d milhões\n", pop1);
+    printf("A população é de: %.2f milhões\n", pop1);
     printf("A área é: %.3f km2\n", area1);
     printf("O PIB é: %.3f\n", pib1);    
     printf("A qtde de pontos tuirísticos: %d\n", turismo1);
     printf("A densidade populacional é de: %.3f\n", densidade1);
-    printf("O PIB per capita é: %.3f\n", pibpc1);
+    printf("O PIB per capita é: %.3f\n\n", pibpc1);
+
+    printf("OS DADOS DO JOGADOR 'B' SÃO:\n\n");
+
+    printf("O estado do jogador B é: %s\n", estado2);
+    printf("O código da cidade B é: %d\n", cod2);
+    printf("O nome da cidade é: %s\n", cidade2);
+    printf("A população é de: %.2f milhões\n", pop2);
+    printf("A área é: %.3f km2\n", area2);
+    printf("O PIB é: %.3f\n", pib2);    
+    printf("A qtde de pontos tuirísticos: %d\n", turismo2);
+    printf("A densidade populacional é de: %.3f\n", densidade2);
+    printf("O PIB per capita é: %.3f\n\n", pibpc2);
+
+    if(pop1 > pop2){
+        printf("A cidade do jogador A é mais populosa\n");
+    }else{
+        printf("A cidade do jogador B é mais populosa\n\n");
+
+    if(area1 > area2){
+        printf("A área da cidade do jogador A é maior\n");
+    }else{
+        printf("A área da cidade do jogador B é maior\n\n");
+
+    if(densidade1 < densidade2){
+        printf("A cidade do jogador A tem a menor densidade populacional\n");
+    }else{
+        printf("A cidade do jogador B tem a menor densidade populacional\n\n");
+
+    if(pib1 > pib2){
+        printf("A cidade do jogador A tem o maior PIB\n");
+    }else{
+        printf("A cidade do jogador B tem o maior PIB\n\n");
+
+    if(pibpc1 > pibpc2){
+        printf("O PIB per capita da cidade do jogador A é maior\n");
+    }else{
+        printf("O PIB per capita da cidade do jogador B é maior");
+
+    if(turismo1 > turismo2){
+        printf("A cidade do jogador A tem mais pontos turísticos\n");
+    }else{
+        printf("A cidade do jogador B tem mais pontos turísticos\n\n");
+
+
+
+    }
+
+
 
     return 0;
 
