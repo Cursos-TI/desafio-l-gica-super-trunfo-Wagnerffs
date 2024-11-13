@@ -153,10 +153,10 @@ int main() {
         printf("A cidade do jogador A tem mais pontos turísticos\n");
     }else{
         printf("A cidade do jogador B tem mais pontos turísticos\n\n");
-
-
-
     }
+
+
+    
 
 
 
@@ -192,5 +192,4 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    return 0;
-}
+    }
