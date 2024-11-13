@@ -22,10 +22,10 @@ int main() {
     
 
     //inicializando as variáveis;
-    estado1[20] = "para";
+    estado1 = "para";
     estado2 = "para";
     cidade1 = "belem";
-    cidade2[20] = "belem";
+    cidade2 = "belem";
     cod1 = 25;
     cod2 = 25;
     pop1 = 360,00;
@@ -132,36 +132,52 @@ int main() {
     printf("O PIB per capita é: %.3f\n\n", pibpc2);
 
     if(pop1 > pop2){
-        printf("A cidade do jogador A é mais populosa\n");
+        printf("A cidade do jogador A é mais populosa\n\n");
     }else{
         printf("A cidade do jogador B é mais populosa\n\n");
+    } if(pop1 == pop2){
+        printf("A população de ambas são iguais!\n\n");
+
     }
     if(area1 > area2){
-        printf("A área da cidade do jogador A é maior\n");
+        printf("A área da cidade do jogador A é maior\n\n");
     }else{
         printf("A área da cidade do jogador B é maior\n\n");
+    }if(area1 == area2){
+        printf("A área de ambas são iguais!\n\n");
     }
+
     if(densidade1 < densidade2){
-        printf("A cidade do jogador A tem a menor densidade populacional\n");
+        printf("A cidade do jogador A tem a menor densidade populacionaln\n");
     }else{
         printf("A cidade do jogador B tem a menor densidade populacional\n\n");
+    }if(densidade1 == densidade2){
+        printf("A densidade populacional de ambas são iguais!\n\n");
     }
+
     if(pib1 > pib2){
         printf("A cidade do jogador A tem o maior PIB\n");
     }else{
         printf("A cidade do jogador B tem o maior PIB\n\n");
+    }if(pib1 == pib2){
+        printf("O PIB de ambas são iguais!\n\n");
     }
+
     if(pibpc1 > pibpc2){
         printf("O PIB per capita da cidade do jogador A é maior\n");
     }else{
         printf("O PIB per capita da cidade do jogador B é maior");
+    }if(pibpc1 == pibpc2){
+        printf("O PIB per capita de ambas são iguais!\n\n");
     }
+
     if(turismo1 > turismo2){
         printf("A cidade do jogador A tem mais pontos turísticos\n");
     }else{
         printf("A cidade do jogador B tem mais pontos turísticos\n\n");
+    }if(turismo1 == turismo2){
+        printf("A quantidade de pontos turísticos de ambas são iguais!\n\n");
     }
-
 
     
 
