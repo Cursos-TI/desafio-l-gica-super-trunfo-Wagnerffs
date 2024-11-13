@@ -12,7 +12,10 @@ int main() {
 
 
      //criação das variáveis;
-    char estado1[20], estado2[20], cidade1[20], cidade2[20];
+    char estado1[50];
+    char estado2[50];
+    char cidade1[50];
+    char cidade2[50];
     int cod1, cod2, turismo1, turismo2;
     float pop1, pop2;
     float area1, area2;
@@ -22,10 +25,6 @@ int main() {
     
 
     //inicializando as variáveis;
-    estado1 = "para";
-    estado2 = "para";
-    cidade1 = "belem";
-    cidade2 = "belem";
     cod1 = 25;
     cod2 = 25;
     pop1 = 360,00;
@@ -92,7 +91,7 @@ int main() {
     //atributo3;
    // atributo4; 
     
-    printf("Escolha qual atributo será comparado!!!");
+    printf("Escolha qual atributo será comparado!!!\n\n");
 
 
     densidade1 =  pop1 / area1;
@@ -131,54 +130,52 @@ int main() {
     printf("A densidade populacional é de: %.3f\n", densidade2);
     printf("O PIB per capita é: %.3f\n\n", pibpc2);
 
-    if(pop1 > pop2), 
-        printf("A cidade do jogador A é mais populosa\n\n");
-        (area1 > area2){
-        printf("A área da cidade do jogador A é maior\n\n");
-    else
-        printf("A cidade do jogador B é mais populosa\n\n");
-    
-     if(pop1 == pop2)
-        printf("A população de ambas são iguais!\n\n");
-       
+    if(pop1 > pop2){ 
+     printf("A cidade do jogador 'A' é mais populosa\n");
+    } else{
+    printf("A cidade do jogador 'B' é mais populosa\n");
+   }
+     if(pop1 == pop2){
+        printf("A população de ambas são iguais!\n");
+    }  
 
     
     if(area1 > area2){
-        printf("A área da cidade do jogador A é maior\n\n");
+        printf("A área da cidade do jogador 'A' é maior\n");
     }else{
-        printf("A área da cidade do jogador B é maior\n\n");
+        printf("A área da cidade do jogador 'B' é maior\n");
     }if(area1 == area2){
-        printf("A área de ambas são iguais!\n\n");
+        printf("A área de ambas são iguais!\n");
     }
 
     if(densidade1 < densidade2){
-        printf("A cidade do jogador A tem a menor densidade populacionaln\n");
+        printf("A cidade do jogador 'A' tem a menor densidade populacional\n");
     }else{
-        printf("A cidade do jogador B tem a menor densidade populacional\n\n");
+        printf("A cidade do jogador 'B' tem a menor densidade populacional\n");
     }if(densidade1 == densidade2){
-        printf("A densidade populacional de ambas são iguais!\n\n");
+        printf("A densidade populacional de ambas são iguais!\n");
     }
 
     if(pib1 > pib2){
-        printf("A cidade do jogador A tem o maior PIB\n");
+        printf("A cidade do jogador 'A' tem o maior PIB\n");
     }else{
-        printf("A cidade do jogador B tem o maior PIB\n\n");
+        printf("A cidade do jogador 'B' tem o maior PIB\n\n");
     }if(pib1 == pib2){
         printf("O PIB de ambas são iguais!\n\n");
     }
 
     if(pibpc1 > pibpc2){
-        printf("O PIB per capita da cidade do jogador A é maior\n");
+        printf("O PIB per capita da cidade do jogador 'A' é maior\n");
     }else{
-        printf("O PIB per capita da cidade do jogador B é maior");
+        printf("O PIB per capita da cidade do jogador 'B' é maior");
     }if(pibpc1 == pibpc2){
         printf("O PIB per capita de ambas são iguais!\n\n");
     }
 
     if(turismo1 > turismo2){
-        printf("A cidade do jogador A tem mais pontos turísticos\n");
+        printf("A cidade do jogador 'A' tem mais pontos turísticos\n");
     }else{
-        printf("A cidade do jogador B tem mais pontos turísticos\n\n");
+        printf("A cidade do jogador 'B' tem mais pontos turísticos\n\n");
     }if(turismo1 == turismo2){
         printf("A quantidade de pontos turísticos de ambas são iguais!\n\n");
     }
