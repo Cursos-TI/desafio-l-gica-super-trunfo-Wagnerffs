@@ -7,9 +7,8 @@
 
 int main() {
 
-    int estado
-    // Definição das variáveis para armazenar as propriedades das cidades
-    char estado, cidade;
+       // Definição das variáveis para armazenar as propriedades das cidades
+   
     int cod, turismo;
     unsigned float pop, area;
     float pib;
@@ -17,17 +16,21 @@ int main() {
 
 
      //criação das variáveis;
-    int cod = 25;
-    int pop = 360;
+    char estado, cidade;
+    int cod, turismo;
+    float pop = 360.00;
     float area = 360.123;
     float pib = 365.321;
-    double densidade = 366.852; //população dividido pela area;
-    float pibpc = 365.321; //pib pela população;
-    int turismo = 25;
-    char nome[50] = "parana";
-
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    double densidade = 366.852; //população / pela area;
+    float pibpc = 365.321; //pib / pela população;
     
+
+    inicializando as variáveis;
+    estado = "para";
+    cidade = "belem";
+    cod = 25;
+    turismo = 25;
+  
      
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -35,20 +38,23 @@ int main() {
 
 
     //criação das entradas e saídas; 
-    printf("Digite cod. da cidade\n");
-    scanf("%d", &cod);
+    printf("Digite o estado:\n");
+    scanf("%s", &estado);
 
     printf("Digite o nome da cidade\n");
-    scanf("%s", &nome);
+    scanf("%s", &cidade);
 
-    printf("Qual é a população\n");
-    scanf("%d", &pop);
+    //printf("Digite o código da cidade:\n");
+    //scanf("%d", &cod);
+
+    printf("Qual é a população?\n");
+    scanf("%.2f", &pop);
 
     printf("Qual é a área\n");
-    scanf("%f", &area);
+    scanf("%.3f", &area);
 
     printf("Qual o PIB\n");
-    scanf("%f", &pib);
+    scanf("%.3f", &pib);
 
     printf("Quantos pontos turísticos\n");
     scanf("%d", &turismo);
