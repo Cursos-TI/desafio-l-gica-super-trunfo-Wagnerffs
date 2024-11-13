@@ -23,8 +23,8 @@ int main() {
 
     //inicializando as variáveis;
     estado1[20] = "para";
-    estado2[20] = "para";
-    cidade1[20] = "belem";
+    estado2 = "para";
+    cidade1 = "belem";
     cidade2[20] = "belem";
     cod1 = 25;
     cod2 = 25;
@@ -87,6 +87,13 @@ int main() {
     printf("Quantos pontos turísticos\n");
     scanf("%d", &turismo2);
 
+    //atributo1;
+    //atributo2;
+    //atributo3;
+   // atributo4; 
+    
+    printf("Escolha qual atributo será comparado!!!");
+
 
     densidade1 =  pop1 / area1;
     densidade2 =  pop2 / area2;
@@ -128,27 +135,27 @@ int main() {
         printf("A cidade do jogador A é mais populosa\n");
     }else{
         printf("A cidade do jogador B é mais populosa\n\n");
-
+    }
     if(area1 > area2){
         printf("A área da cidade do jogador A é maior\n");
     }else{
         printf("A área da cidade do jogador B é maior\n\n");
-
+    }
     if(densidade1 < densidade2){
         printf("A cidade do jogador A tem a menor densidade populacional\n");
     }else{
         printf("A cidade do jogador B tem a menor densidade populacional\n\n");
-
+    }
     if(pib1 > pib2){
         printf("A cidade do jogador A tem o maior PIB\n");
     }else{
         printf("A cidade do jogador B tem o maior PIB\n\n");
-
+    }
     if(pibpc1 > pibpc2){
         printf("O PIB per capita da cidade do jogador A é maior\n");
     }else{
         printf("O PIB per capita da cidade do jogador B é maior");
-
+    }
     if(turismo1 > turismo2){
         printf("A cidade do jogador A tem mais pontos turísticos\n");
     }else{
