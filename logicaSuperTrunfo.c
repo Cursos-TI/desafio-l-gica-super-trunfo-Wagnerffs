@@ -71,7 +71,7 @@ int main() {
 
     printf("Digite o nome da cidade do jogador B\n");
     scanf("%s", &cidade2);
-    
+
     printf("Digite o código da cidade do jogador B:\n");
     scanf("%d", &cod2);
 
@@ -131,14 +131,18 @@ int main() {
     printf("A densidade populacional é de: %.3f\n", densidade2);
     printf("O PIB per capita é: %.3f\n\n", pibpc2);
 
-    if(pop1 > pop2){
+    if(pop1 > pop2), 
         printf("A cidade do jogador A é mais populosa\n\n");
-    }else{
+        (area1 > area2){
+        printf("A área da cidade do jogador A é maior\n\n");
+    else
         printf("A cidade do jogador B é mais populosa\n\n");
-    } if(pop1 == pop2){
+    
+     if(pop1 == pop2)
         printf("A população de ambas são iguais!\n\n");
+       
 
-    }
+    
     if(area1 > area2){
         printf("A área da cidade do jogador A é maior\n\n");
     }else{
