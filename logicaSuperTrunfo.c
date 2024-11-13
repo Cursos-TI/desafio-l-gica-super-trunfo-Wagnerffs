@@ -137,6 +137,8 @@ int main() {
     }
      else{
     printf("A cidade do jogador 'B' é mais populosa\n");
+   }else{
+    printf("A população de ambas são iguais!\n")
    }
      
 
