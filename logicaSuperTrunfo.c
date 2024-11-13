@@ -71,7 +71,7 @@ int main() {
 
     printf("Digite o nome da cidade do jogador B\n");
     scanf("%s", &cidade2);
-
+    
     printf("Digite o código da cidade do jogador B:\n");
     scanf("%d", &cod2);
 
