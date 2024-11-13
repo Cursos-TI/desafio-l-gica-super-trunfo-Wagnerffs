@@ -129,56 +129,47 @@ int main() {
     printf("A qtde de pontos tuirísticos: %d\n", turismo2);
     printf("A densidade populacional é de: %.3f\n", densidade2);
     printf("O PIB per capita é: %.3f\n\n", pibpc2);
-
+    
+    
+    }  
     if(pop1 > pop2){ 
      printf("A cidade do jogador 'A' é mais populosa\n");
-    } else{
+    }
+     else{
     printf("A cidade do jogador 'B' é mais populosa\n");
    }
-     if(pop1 == pop2){
-        printf("A população de ambas são iguais!\n");
-    }  
+     
 
     
     if(area1 > area2){
         printf("A área da cidade do jogador 'A' é maior\n");
     }else{
         printf("A área da cidade do jogador 'B' é maior\n");
-    }if(area1 == area2){
-        printf("A área de ambas são iguais!\n");
-    }
+   
 
     if(densidade1 < densidade2){
         printf("A cidade do jogador 'A' tem a menor densidade populacional\n");
     }else{
         printf("A cidade do jogador 'B' tem a menor densidade populacional\n");
-    }if(densidade1 == densidade2){
-        printf("A densidade populacional de ambas são iguais!\n");
-    }
+   
 
     if(pib1 > pib2){
         printf("A cidade do jogador 'A' tem o maior PIB\n");
     }else{
-        printf("A cidade do jogador 'B' tem o maior PIB\n\n");
-    }if(pib1 == pib2){
-        printf("O PIB de ambas são iguais!\n\n");
-    }
+        printf("A cidade do jogador 'B' tem o maior PIB\n");
+   
 
     if(pibpc1 > pibpc2){
         printf("O PIB per capita da cidade do jogador 'A' é maior\n");
     }else{
-        printf("O PIB per capita da cidade do jogador 'B' é maior");
-    }if(pibpc1 == pibpc2){
-        printf("O PIB per capita de ambas são iguais!\n\n");
+        printf("O PIB per capita da cidade do jogador 'B' é maior\n");
     }
 
     if(turismo1 > turismo2){
         printf("A cidade do jogador 'A' tem mais pontos turísticos\n");
     }else{
-        printf("A cidade do jogador 'B' tem mais pontos turísticos\n\n");
-    }if(turismo1 == turismo2){
-        printf("A quantidade de pontos turísticos de ambas são iguais!\n\n");
-    }
+        printf("A cidade do jogador 'B' tem mais pontos turísticos\n");
+    
 
     
 
