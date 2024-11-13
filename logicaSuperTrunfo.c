@@ -6,30 +6,30 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-
-       // Definição das variáveis para armazenar as propriedades das cidades
+// Definição das variáveis para armazenar as propriedades das cidades
    
-    int cod, turismo;
-    unsigned float pop, area;
-    float pib;
-    // Você pode utilizar o código do primeiro desafio
+// Você pode utilizar o código do primeiro desafio
 
 
      //criação das variáveis;
-    char estado, cidade;
-    int cod, turismo;
-    float pop = 360.00;
-    float area = 360.123;
-    float pib = 365.321;
-    double densidade = 366.852; //população / pela area;
-    float pibpc = 365.321; //pib / pela população;
+    char estado1, estado2, cidade1, cidade2;
+    int cod1, cod2, turismo1, turismo2;
+    float pop1, pop2;
+    float area1, area2;
+    float pib1, pib2;
+    double densidade1, densidade2; //população / pela area;
+    float pibpc1, pibpc2; //pib / pela população;
     
 
     inicializando as variáveis;
-    estado = "para";
-    cidade = "belem";
-    cod = 25;
-    turismo = 25;
+    estado1 = "para";
+    estado2 = "para";
+    cidade1 = "belem";
+    cidade2 = "belem;"
+    cod1 = 25;
+    cod2 = 25;
+    turismo1 = 25;
+    turismo2 = 25;
   
      
     // Cadastro das Cartas:
@@ -38,11 +38,11 @@ int main() {
 
 
     //criação das entradas e saídas; 
-    printf("Digite o estado:\n");
-    scanf("%s", &estado);
+    printf("Digite o estado do jogador A:\n");
+    scanf("%s", &estado1);
 
-    printf("Digite o nome da cidade\n");
-    scanf("%s", &cidade);
+    printf("Digite o nome da cidade do jogador A\n");
+    scanf("%s", &cidade1);
 
     //printf("Digite o código da cidade:\n");
     //scanf("%d", &cod);
@@ -59,8 +59,10 @@ int main() {
     printf("Quantos pontos turísticos\n");
     scanf("%d", &turismo);
 
-    densidade =  pop / area;
-    pibpc = pib / pop;
+    densidade1 =  pop / area;
+    densidade2 =  pop / area;
+    pibpc1 = pib / pop;
+    pibpc2 = pib / pop;
 
     
     // Exibição dos Dados das Cartas;
@@ -69,7 +71,8 @@ int main() {
 
 
     //Exibição dos dados
-    printf("O código da cidade é: %d\n", cod);
+    printf("O estado do jogador 01 é: %s\n", estado1);
+    printf("O código da cidade 01 é: %d\n", cod);
     printf("O nome da cidade é: %s\n", nome);
     printf("A população é de: %d milhões\n", pop);
     printf("A área é: %.3f km2\n", area);
