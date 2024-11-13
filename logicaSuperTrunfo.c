@@ -135,10 +135,8 @@ int main() {
     if(pop1 > pop2){ 
      printf("A cidade do jogador 'A' é mais populosa\n");
     }
-     else{
+     if(pop1 < pop2){ 
     printf("A cidade do jogador 'B' é mais populosa\n");
-   }else{
-    printf("A população de ambas são iguais!\n")
    }
      
 
