@@ -48,16 +48,16 @@ int main() {
     //scanf("%d", &cod);
 
     printf("Qual é a população?\n");
-    scanf("%.2f", &pop);
+    scanf("%.2f", &pop1);
 
     printf("Qual é a área\n");
-    scanf("%.3f", &area);
+    scanf("%.3f", &area1);
 
     printf("Qual o PIB\n");
-    scanf("%.3f", &pib);
+    scanf("%.3f", &pib1);
 
     printf("Quantos pontos turísticos\n");
-    scanf("%d", &turismo);
+    scanf("%d", &turismo1);
 
     densidade1 =  pop / area;
     densidade2 =  pop / area;
@@ -71,15 +71,15 @@ int main() {
 
 
     //Exibição dos dados
-    printf("O estado do jogador 01 é: %s\n", estado1);
-    printf("O código da cidade 01 é: %d\n", cod);
-    printf("O nome da cidade é: %s\n", nome);
-    printf("A população é de: %d milhões\n", pop);
-    printf("A área é: %.3f km2\n", area);
-    printf("O PIB é: %.3f\n", pib);    
-    printf("A qtde de pontos tuirísticos: %d\n", turismo);
-    printf("A densidade populacional é de: %.3f\n", densidade);
-    printf("O PIB per capita é: %.3f\n", pibpc);
+    printf("O estado do jogador A é: %s\n", estado1);
+    printf("O código da cidade 01 é: %d\n", cod1);
+    printf("O nome da cidade é: %s\n", cidade1);
+    printf("A população é de: %d milhões\n", pop1);
+    printf("A área é: %.3f km2\n", area1);
+    printf("O PIB é: %.3f\n", pib1);    
+    printf("A qtde de pontos tuirísticos: %d\n", turismo1);
+    printf("A densidade populacional é de: %.3f\n", densidade1);
+    printf("O PIB per capita é: %.3f\n", pibpc1);
 
     return 0;
 
